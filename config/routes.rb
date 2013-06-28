@@ -1,6 +1,7 @@
 Wtw::Application.routes.draw do
 
    root to: 'static_pages#home'
+   get '/location' => 'static_pages#location'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
