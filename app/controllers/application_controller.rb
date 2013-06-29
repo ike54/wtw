@@ -13,7 +13,7 @@ class ApplicationController < ActionController::Base
   	if session[:mobile_param]
   		session[:mobile_param] == "1"
   	else
-  	    request.user_agent =~ /Mobile|webOS/
+  	    requeset.format = :mobile if request.user_agent =~ /Mobile|webOS|iPhone/
   	end
   end
   helper_method :mobile_device?
