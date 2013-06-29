@@ -2,7 +2,7 @@
 <html>
   <head>
     <title><%= full_title(yield(:title)) %></title>
-    <%= stylesheet_link_tag "mobile" if mobile_device? %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%= stylesheet_link_tag "application", media: "all",
                                            "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -12,15 +12,7 @@
   </head>
   <body>
     <%= render 'layouts/header' %>
-    <div class="container">
-      <p>
-        <% if mobile_device? %>
-          <%= link_to "Full Site", :mobile => 0 %>
-        <% else %>
-          <%= link_to "Mobile Site", :mobile => 1 %>
-        <% end %>
-      </p>
-
+    <div class="container-fluid">
       <% flash.each do |key, value| %>
         <%= content_tag(:div, value, class: "alert alert-#{key}") %>
       <% end %>
