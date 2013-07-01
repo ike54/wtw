@@ -4,6 +4,12 @@
 /* mixins, variables, etc. */
 
 $grayMediumLight: #eaeaea;
+@media (max-width: 767px) {
+  body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -92,7 +98,7 @@ p {
 
   text-align: center;
   font-size: 1em;
-  color: $gray;
+  color: $grayLighter;
   text-transform: uppercase;
   letter-spacing: -1px;
   font-weight: bold;
