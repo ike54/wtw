@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 section {
@@ -88,6 +88,16 @@ p {
   }
 }
 
+#blogo {
+
+  text-align: center;
+  font-size: 3em;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
 /* footer */
 
 footer {
@@ -183,4 +193,13 @@ input {
 
 .map {
   height: 480px;
+}
+
+
+#home{
+  padding-top: 55px;
+}
+
+#location{
+  padding-top: 55px;
 }

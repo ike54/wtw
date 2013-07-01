@@ -1,13 +1,13 @@
 <header class="navbar navbar-fixed-top navbar-inverse" style="position:fixed; margin-left:0px; margin-right:0px">
+
   <div class="navbar-inner">
     <div class="container-fluid">
-      <%= link_to "west texas wings", root_path, id: "logo" %>
-      <nav>
+      <%= link_to "menu", "http://docs.google.com/viewer?url=wtwings.herokuapp.com%2Fmenu2013.pdf" , id: "logo" %>
+      <nav id="navigation">
 
-        <ul class="nav pull-right">
-          <li><%= link_to "Home", root_path %></li>
-          <li><%= link_to "Location", location_path %></li>
-          <li><%= link_to "Menu", "http://docs.google.com/viewer?url=wtwings.herokuapp.com%2Fmenu2013.pdf" %></li>
+        <ul id="topnav" class="nav pull-right">
+          <li class="current"><%= link_to "Home", "#home" , id: "logo"%></li>
+          <li><%= link_to "Location", "#location", id: "logo" %></li>
      <!---     <li><%= link_to "Online Ordering", '#' %></li> -->
         </ul>
       </nav>
