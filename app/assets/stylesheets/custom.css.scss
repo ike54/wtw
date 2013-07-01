@@ -91,7 +91,7 @@ p {
 #blogo {
 
   text-align: center;
-  font-size: 3em;
+  font-size: 1em;
   color: $gray;
   text-transform: uppercase;
   letter-spacing: -1px;
@@ -192,12 +192,16 @@ input {
 }
 
 .map {
-  height: 480px;
+  height: 30%;
 }
 
 
 #home{
   padding-top: 0px;
+}
+
+.home{
+  height: 500px;
 }
 
 #location{
@@ -206,6 +210,11 @@ input {
 
 
 #content{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.contianer-fluid{
   padding-left: 0px;
   padding-right: 0px;
 }
