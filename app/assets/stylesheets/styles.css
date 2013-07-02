@@ -108,6 +108,7 @@ hr {
 
 /********** HEADER WRAP **********/
 #headerwrap {
+	background-size: initial;
     width: 100%; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
