@@ -1,4 +1,7 @@
-﻿body{position:relative;background-color:#e8e8e8;font-family:'Open Sans Condensed',sans-serif;font-size:16px;color:#000;}
+﻿@import "bootstrap";
+@import "bootstrap-responsive"
+
+body{position:relative;background-color:#e8e8e8;font-family:'Open Sans Condensed',sans-serif;font-size:16px;color:#000;}
 h2,h3,h4,h5,h6{font-family:'Open Sans Condensed',sans-serif;color:#666;}
 h1 {
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -108,12 +111,11 @@ hr {
 
 /********** HEADER WRAP **********/
 #headerwrap {
-	background-size: initial;
     width: 100%; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
-	  background-size: cover;;
+	  background-size: cover;
     min-height: 600px;
     margin-top: -60px;
     padding-top:160px;
