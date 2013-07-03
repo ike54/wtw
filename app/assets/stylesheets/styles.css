@@ -5,6 +5,9 @@
     float: right;
     margin: 8px 5px;
 }
+      body {
+        padding-top: 60px;
+      }
 
 body {
 	position:relative;
@@ -126,7 +129,7 @@ hr {
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
 	  background-size: cover;
-    min-height: 600px;
+    min-height: 250px;
     margin-top: -60px;
     padding-top:160px;
     text-align:center;
