@@ -17,6 +17,7 @@ body {
 	color:#000;}
 h2,h3,h4,h5,h6{font-family:'Open Sans Condensed',sans-serif;color:#666;}
 h1 {
+	line-height: 10px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight:500;
 	font-size:60px;
@@ -129,9 +130,9 @@ hr {
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
 	  background-size: cover;
-    min-height: 325px;
+    min-height: 300px;
     margin-top: -60px;
-    padding-top:160px;
+    padding-top:100px;
     text-align:center;
 }
 
