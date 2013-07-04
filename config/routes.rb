@@ -1,5 +1,6 @@
 Wtw::Application.routes.draw do
 
+   resources :contacts  
    root to: 'static_pages#index'
   # get '/location' => 'static_pages#location'
   # The priority is based upon order of creation: first created -> highest priority.

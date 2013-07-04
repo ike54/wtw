@@ -13,26 +13,28 @@
        <h4>432.837.5233</h4>
 		</div><!-- span4 -->	
 		<div class="span4 pull-right">
-          <form>
-            <fieldset>
-            <div class="control-group">
-              <div class="controls">
-                <input class="span12" type="text" placeholder="Your Full Name">
-              </div> <!-- controls -->
-              <div class="controls">
-                <input class="span12" type="text" placeholder="Your Email">
-              </div>
-              <div class="controls">
-                <input class="span12" type="text" placeholder="Message Subject">
-              </div>
-              <div class="controls">
-                <textarea class="span12" id="textarea" rows="6" placeholder="Endpoint not yet setup, message goes no where!"></textarea>
-              </div>
-              <button class="btn btn-default center">Send Message</button>
-          </div>
-        </div>
-      </fieldset>
-    </form>
-</div>
-  </div>
-</div>
+      <%= form_for(@contact)   do |f| %>
+        <% flash.each do |key, value| %>
+          <% if value == "Message Recieved!" %>
+            <%= content_tag(:div, value, class: "alert alert-#{key}") %>
+          <% else %>
+            <% value.each do |v| %>
+              <%= content_tag(:div, v, class: "alert alert-#{key}") %>
+            <% end %>
+          <% end %>
+        <% end %>
+        <%= f.text_field :name, :placeholder => 'Full Name', :class => 'span12' %>
+
+        <%= f.text_field :email, :placeholder => 'Email Address', :class => 'span12' %>
+
+        <%= f.text_field :subject, :placeholder => 'Subject', :class => 'span12' %>
+
+        <%= f.text_area :message, :placeholder => 'Message', :rows => 6, :class => 'span12' %>
+<br />
+        <%= f.submit "Send", class: "btn btn-default   center" %>
+      <% end %>
+      
+</div> <!--span4 pull-right -->
+  </div> <!--row-fluid -->
+</div><!-- container-fluid -->
+</div> <!-- footer wrap -->

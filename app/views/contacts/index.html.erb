@@ -1,0 +1,13 @@
+<ul class="contacts">
+  <% @contacts.each do |contact| %>
+  Name: 
+   <%=  contact.name %><br />
+  Email: 
+     <%= contact.email %><br />
+ Subject: 
+     <%= contact.subject %><br />
+ Message:
+      <%= contact.message %><br /><br />
+    
+  <% end %>
+</ul>
