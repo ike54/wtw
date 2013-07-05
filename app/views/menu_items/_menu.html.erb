@@ -1,0 +1,75 @@
+<section id="menu"><br><br></section>
+<div id="menuwrap">
+<div class="containter-fluid">
+	<br />
+	<h1> MENU </h1>
+<div class="span4 pull-left">
+<h2>WINGS</h2>
+<h4>sauced and tossed any way you like</h4>
+  <% @menu.each do |item| %>
+    <% if item.section == "Wings" %>
+      <%= item.item %> -
+      <%= item.price %> <br />
+    <% end %>
+  <% end %>
+<h2>STRIPS</h2>
+<h4>sauced and tossed any way you like</h4>
+  <% @menu.each do |item| %>
+    <% if item.section == "Strips" %>
+      <%= item.item %> - 
+      <%= item.price %><br />
+    <% end %>
+  <% end %>
+<h2>SALAD</h2>
+<h4>spring mix, cheese, hard-boiled egg, carrot, and your choice of ranch, blue cheese, or honey mustard</h4>
+  <% @menu.each do |item| %>
+    <% if item.section == "Salad" %>
+      <%= item.item %> - 
+      <%= item.price %> <br />
+    <% end %>
+  <% end %>
+
+  <h2>Sides</h2>
+  <% @menu.each do |item| %>
+    <% if item.section == "Sides" %>
+      <%= item.item %> -
+      <%= item.price %> <br />
+    <% end %>
+  <% end %>
+   </div>
+
+
+   <div class="span4 pull-right">
+<h2>WING COMBOS</h2>
+<h4>sauced and tossed any way you like, your choice of regular or sweet potato fries, dressing, and a drink</h4>
+  <% @menu.each do |item| %>
+   	<% if item.section == "Wing Combos" %>
+      <%= item.item %> - 
+      <%= item.price %> <br />
+    <% end %>
+  <% end %>
+<h2>STRIP COMBOS</h2>
+<h4>sauced and tossed any way you like, your choice of regular or sweet potato fries, dressing, and a drink</h4>
+  <% @menu.each do |item| %>
+    <% if item.section == "Strip Combos" %>
+      <%= item.item %> - 
+      <%= item.price %> <br />
+    <% end %>
+  <% end %>
+   	<h2>RUBS</h2>
+  <% @menu.each do |item| %>
+    <% if item.section == "Rubs" %>
+      <%= item.item %> <br />
+    <% end %>
+  <% end %>
+
+<h2>SAUCES</h2>
+  <% @menu.each do |item| %>
+    <% if item.section == "Sauces" %>
+      <%= item.item %> <br />
+    <% end %>
+  <% end %>
+
+</div>
+</div>
+</div>

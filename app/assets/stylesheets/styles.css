@@ -230,12 +230,12 @@ hr {
 /********** menu WRAP **********/
 #menuwrap {
     width: 100%;
-    background: url(../img/mac.jpg) no-repeat center center fixed; 
+    background-color: #232121; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
 	  background-size: cover;;
-    min-height: 400px;
+    min-height: 1000px;
     text-align:center;
 }
 
