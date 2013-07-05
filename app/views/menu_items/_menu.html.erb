@@ -2,9 +2,9 @@
 <div id="menuwrap">
 <div class="containter-fluid">
 <div class="row-fluid">
-	<h1> MENU </h1>
+	<h1><b> MENU </b></h1>
 <div class="span4 pull-left">
-<h2>WINGS</h2>
+<h2><b>WINGS</b></h2>
 <h4>sauced and tossed any way you like</h4>
   <% @menu.each do |item| %>
     <% if item.section == "Wings" %>
@@ -13,7 +13,7 @@
     <% end %>
   <% end %>
 
-<h2>STRIPS</h2>
+<h2><b>STRIPS</b></h2>
 <h4>sauced and tossed any way you like</h4>
   <% @menu.each do |item| %>
     <% if item.section == "Strips" %>
@@ -21,7 +21,7 @@
       <%= item.price %><br />
     <% end %>
   <% end %>
-<h2>SALAD</h2>
+<h2><b>SALAD</b></h2>
 <h4>spring mix, cheese, hard-boiled egg, carrot, and your choice of ranch, blue cheese, or honey mustard</h4>
   <% @menu.each do |item| %>
     <% if item.section == "Salad" %>
@@ -30,7 +30,7 @@
     <% end %>
   <% end %>
 
-  <h2>Sides</h2>
+  <h2><b>Sides</b></h2>
   <% @menu.each do |item| %>
     <% if item.section == "Sides" %>
       <%= item.item %> -
@@ -41,15 +41,15 @@
 
 
    <div class="span4 pull-right">
-<h2>WING COMBOS</h2>
-<h4>sauced and tossed any way you like, your choice of regular or sweet potato fries, dressing, and a drink</h4>
+<h2><b>WING COMBOS</b></h2>
+<h4>sauced and tossed any way you like, your choice of regular or sweet potato fries, dressing, and a drink <br /><small>32 Wing Combos get 2 Fries/Drink and 50 Wing Combos receive 4 Fries/Drink</small></h4>
   <% @menu.each do |item| %>
    	<% if item.section == "Wing Combos" %>
       <%= item.item %> - 
       <%= item.price %> <br />
     <% end %>
   <% end %>
-<h2>STRIP COMBOS</h2>
+<h2><b>STRIP COMBOS</b></h2>
 <h4>sauced and tossed any way you like, your choice of regular or sweet potato fries, dressing, and a drink</h4>
   <% @menu.each do |item| %>
     <% if item.section == "Strip Combos" %>
@@ -57,14 +57,14 @@
       <%= item.price %> <br />
     <% end %>
   <% end %>
-   	<h2>RUBS</h2>
+   	<h2><b>RUBS</b></h2>
   <% @menu.each do |item| %>
     <% if item.section == "Rubs" %>
       <%= item.item %> <br />
     <% end %>
   <% end %>
 
-<h2>SAUCES</h2>
+<h2><b>SAUCES</b></h2>
   <% @menu.each do |item| %>
     <% if item.section == "Sauces" %>
       <%= item.item %> <br />

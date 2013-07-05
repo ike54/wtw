@@ -15,7 +15,7 @@ body {
 	font-family:'Open Sans Condensed',sans-serif;
 	font-size:16px;
 	color:#000;}
-h2,h3,h4,h5,h6{font-family:'Open Sans Condensed',sans-serif;color:#666;}
+h2,h3,h4,h5,h6{font-family:'Open Sans Condensed',sans-serif;color:#FFF;}
 h1 {
 	line-height: 10px;
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -237,6 +237,7 @@ hr {
 	  background-size: cover;;
     min-height: 1000px;
     text-align:center;
+    color: #ff1919 ;
 }
 
 #menuwrap .boxcolor{
@@ -253,6 +254,7 @@ hr {
 	color:#fff;
 	padding:20px;
 }
+
 
 /********** menu WRAP 2 **********/
 #menuwrap_2 h2 {
@@ -298,7 +300,7 @@ hr {
 	font-family: 'Open Sans Condensed', sans serif;
 	font-weight:400;
 	font-size:30px;
-	color:#ec602f;
+	color:#ff1919;
 	text-align:center;
     margin:5px;
 }
