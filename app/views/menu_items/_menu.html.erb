@@ -1,9 +1,9 @@
 <section id="menu"><br><br></section>
 <div id="menuwrap">
 <div class="containter-fluid">
-	<br />
+<div class="row-fluid">
 	<h1> MENU </h1>
-<div class="span3 pull-left">
+<div class="span4 pull-left">
 <h2>WINGS</h2>
 <h4>sauced and tossed any way you like</h4>
   <% @menu.each do |item| %>
@@ -11,7 +11,8 @@
       <%= item.item %> -
       <%= item.price %> <br />
     <% end %>
-  <% end %>pu
+  <% end %>
+
 <h2>STRIPS</h2>
 <h4>sauced and tossed any way you like</h4>
   <% @menu.each do |item| %>
@@ -39,7 +40,7 @@
    </div>
 
 
-   <div class="span3 pull-right">
+   <div class="span4 pull-right">
 <h2>WING COMBOS</h2>
 <h4>sauced and tossed any way you like, your choice of regular or sweet potato fries, dressing, and a drink</h4>
   <% @menu.each do |item| %>
@@ -69,7 +70,7 @@
       <%= item.item %> <br />
     <% end %>
   <% end %>
-
+</div>
 </div>
 </div>
 </div>
